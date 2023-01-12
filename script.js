@@ -50,7 +50,6 @@ function getName() {
     }
     else {
         let name = document.getElementById(boxId).src;
-        console.log(typeof(name));
         if (name == '') {
             document.getElementById("imgDescription").innerHTML = "Dette bildet er tomt!";
             document.getElementById(boxId).style.border = "2px solid";
