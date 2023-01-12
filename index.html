@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Tittel</title>
+    <title>Uke 2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Velkommen</h1>
-    <p>Hei!</p>
+    <img onclick="setSourceFromBox(this)" id="box1" width="300px" height="300px">
+    <img onclick="setSourceFromBox(this)" id="box2" width="300px" height="300px">
+    <img onclick="setSourceFromBox(this)" id="box3" width="300px" height="300px">
+    <br>
+    <div onclick="setSourceFromText(this)" id="text1">Calico</div>
+    <div onclick="setSourceFromText(this)" id="text2">Maine Coon</div>
+    <div onclick="setSourceFromText(this)" id="text3">Tortie</div>
+    <br>
+    <br>
+    <button onclick="getName()">Hent bildenavn</button>
+    <div id="imgDescription"></div>
 </body>
     
 </html>
