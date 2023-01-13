@@ -11,6 +11,10 @@ div {
     margin: 12px;
 }
 
+#imgDescription {
+    text-decoration: none;
+}
+
 button {
     font-size: 18px;
 }
