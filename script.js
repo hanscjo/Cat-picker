@@ -4,7 +4,7 @@ var textId = "";
 
 function setSourceFromBox(selectedBox) {
     if (src == "") {
-        if (boxId != "") {
+        if (boxId) {
             deSelectBox(); //Foretrekker dette fremfor å iterere gjennom alle img taggene
         }
         boxId = selectedBox.id;
@@ -20,7 +20,7 @@ function setSourceFromBox(selectedBox) {
 
 function setSourceFromText(selectedText) {
     if (boxId == "") {
-        if (textId != "") {
+        if (textId) {
             deSelectText();
         }
         src = selectedText.innerHTML;
